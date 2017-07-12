@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -15.833
+TNS   : -1788.031
+
+Type  : Slow 1200mV 85C Model Setup 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -13.140
+TNS   : -369.788
+
+Type  : Slow 1200mV 85C Model Hold 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -4.816
+TNS   : -121.509
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -307.545
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -2.202
+TNS   : -539.300
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -14.494
+TNS   : -1641.567
+
+Type  : Slow 1200mV 0C Model Setup 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -12.269
+TNS   : -342.986
+
+Type  : Slow 1200mV 0C Model Hold 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -4.475
+TNS   : -114.072
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -307.545
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -2.085
+TNS   : -479.042
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -7.489
+TNS   : -783.000
+
+Type  : Fast 1200mV 0C Model Setup 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -6.546
+TNS   : -183.108
+
+Type  : Fast 1200mV 0C Model Hold 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -2.480
+TNS   : -63.610
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.010
+TNS   : -0.010
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -257.659
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PC_Register:ProgramCounter|PCValue[10]'
+Slack : -0.945
+TNS   : -177.564
+
+------------------------------------------------------------

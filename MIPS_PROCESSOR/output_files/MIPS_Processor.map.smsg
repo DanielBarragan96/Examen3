@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at MIPS_Processor.v(82): object "WriteRegister_wire" differs only in case from object "WriteRegister_Wire" in the same scope File: C:/MIPS_Projects/MIPS_PROCESSOR/SOURCES/MIPS_Processor.v Line: 82
+Info (10281): Verilog HDL Declaration information at MIPS_Processor.v(84): object "EXMEM_WriteRegister_Wire" differs only in case from object "EXMEM_WriteRegister_wire" in the same scope File: C:/MIPS_Projects/MIPS_PROCESSOR/SOURCES/MIPS_Processor.v Line: 84
+Info (10281): Verilog HDL Declaration information at MIPS_Processor.v(85): object "MEMWB_WriteRegister_Wire" differs only in case from object "MEMWB_WriteRegister_wire" in the same scope File: C:/MIPS_Projects/MIPS_PROCESSOR/SOURCES/MIPS_Processor.v Line: 85

@@ -1,0 +1,49 @@
+/******************************************************************
+* Description
+*	Forward Unit
+* Author:
+*	Sergio Chung/Daniel Barragan
+* Date:
+*	08/07/2017
+******************************************************************/
+
+module ALU 
+(
+	input [31:0] Rs,
+	input [31:0] Rt,
+	input [31:0] WriteRegEXMEM,
+	input [31:0] WriteRegMEMWB,
+	output reg ForwardA,
+	output reg ForwardB
+);
+
+
+   always @ (Rs or Rt or WriteRegEXMEM or WriteRegMEMWB)
+     begin
+		case (ALUOperation)
+		  ADD: // add
+			ALUResult=A + B;
+		  SUB: // sub
+			ALUResult=A - B;
+		  AND: // and
+		  ALUResult= A & B;
+		  OR:  // or
+		  ALUResult= A | B;
+		  NOR:  //nor
+		  ALUResult= ~(A|B);	
+		  LUI:
+		  ALUResult= {{B[15:0]},16'b0};
+		  SLL:
+		  ALUResult= B<<C;
+		  SRL:
+		  ALUResult= B>>C;
+		  BEQ:
+		  Zero = A==B;//condicion para el branch
+		  BNE:
+		  Zero = A!=B;//condicion para el branch
+		default:
+			ALUResult= 0;
+	endcase // case(control)
+	//Zero = (ALUResult==0) ? 1'b1 : 1'b0;
+     end // always @ (A or B or control)
+endmodule // ALU

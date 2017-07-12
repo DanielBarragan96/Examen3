@@ -1,0 +1,33 @@
+/******************************************************************
+* Description
+*	Hazard Detection Unit
+* Author:
+*	Sergio Chung/Daniel Barragan
+* Date:
+*	08/07/2017
+******************************************************************/
+
+module HazardUnit 
+(
+	input [31:0] Rs,
+	input [31:0] Rt,
+	input [31:0] IDEX_MemRead,
+	input [31:0] IDEX_Rt,
+	output reg [1:0]DU_Selector,
+	output reg [1:0]IFIDWrite,
+	output reg [1:0]PCWrite
+);
+
+
+   always @ (Rs or Rt or IDEX_MemRead or IDEX_Rt)
+     begin
+		if(IDEX_MemRead && ((IDEX_Rt == Rs) | (IDEX_Rt == Rt)))
+			
+		else 
+			begin
+			ForwardA[1:0] = 'b00;
+			ForwardB[1:0] = 'b00;
+			end
+	  end 
+	  
+endmodule 
